@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #fbfbfb;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 5rem;
+  box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  width: 6rem;
+}
+
+.logo img {
+  width: 100%;
+}
+.link {
+  height: 100%;
+}
+.links {
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px;
+  margin: 0;
+}
+.links li a {
+  text-decoration: none;
+  color: black;
+}
+.links li:first-child {
+  color: #f2c955;
+}
+
+.links li {
+  position: relative;
+  overflow: hidden;
+  padding: 1rem 1.2rem;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.links li::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #f2c955;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+  transform-origin: bottom left;
+}
+
+.links li:hover::after {
+  transform: scaleX(1);
+}
+
+.links li:hover {
+  color: #f2c955;
+}
+
+@media only screen and (max-width: 1024px) {
+  .nav {
+    padding: 1.2rem 3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2rem;
+  }
+
+  .logo {
+    order: -1;
+    margin-bottom: 10px;
+  }
+
+  .links {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .links li {
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .nav {
+    padding: 0.8rem;
+  }
+
+  .logo {
+    width: 6rem;
+  }
+
+  .links {
+    font-size: 1rem;
+  }
+}
+.navbarcolor {
+  background-color: black;
+  color: white;
+}
+#btn {
+  width: 40px;
+  height: 40px;
+  background-color: aliceblue;
+  color: black;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+}
+/* ---------section 1------- */
+.section1 {
+  height: 100vh;
+  width: 100%;
+  min-height: 40rem;
+  background-attachment: cover;
+  background-image: url(../Images/typo-section1.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.desc {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  width: 40%;
+}
+.desc h1 {
+  color: #c9a43d;
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.desc p {
+  margin-top: 2.8rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .section1 {
+    background-image: none;
+  }
+  .desc {
+    width: 80%;
+    place-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .section1 {
+    background-image: none;
+  }
+}
+/* ---- section 2 ---- */
+.section2 {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.section2 h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 4rem;
+  position: relative;
+}
+
+.section2 h2::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 30%;
+  width: 40%;
+  height: 3px;
+  background-color: #f2c955;
+  border-radius: 3px;
+}
+.service {
+  border: 3px solid #f2c955;
+  margin: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+  transition: ease 0.2s;
+}
+.service h4 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #c9a43d;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.service p {
+  color: #717171;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.service:hover {
+  transform: scale(1.03);
+}
+/* ----------- section 3 ------------ */
+.section3 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.section3 h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 4rem;
+  position: relative;
+}
+
+.section3 h2::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 30%;
+  width: 40%;
+  height: 3px;
+  background-color: #f2c955;
+  border-radius: 3px;
+}
+.produits {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.produit {
+  height: 12rem;
+  background-color: #717171;
+  background-image: url(../Images/147309-2243-TEBASE_GREENMOSS-1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 15px;
+}
+.produit p {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0.4rem;
+}
+/* ----------  section 4  --------- */
+.section4 {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+.section4 h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 4rem;
+  position: relative;
+}
+
+.section4 h2::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 30%;
+  width: 40%;
+  height: 3px;
+  background-color: #f2c955;
+  border-radius: 3px;
+}
+.tech {
+  height: 6rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.techImg {
+  width: 100%;
+  height: 100%;
+}
+.techImg img {
+  height: 100%;
+}
+
+/* -----------------    FOOTER  --------------- */
+footer {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 17px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.logoFooter {
+  height: 15%;
+  width: 10rem;
+  margin: 2rem;
+}
+.logoFooter img {
+  width: 100%;
+}
+.socialFooter {
+  height: 15%;
+  font-size: 2rem;
+}
+.socialFooter button {
+  outline: none;
+  padding: 5px;
+  border: none;
+  background-color: #ffffff;
+}
+.socialFooter a {
+  color: #717171;
+  text-decoration: none;
+}
+.rights {
+  height: 15%;
+}
+footer h4,
+footer p {
+  text-align: center;
+}
+footer h4 {
+  padding: 2rem;
+}
